@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Goblins</title>
+    <link rel="icon" type="image/png" href="https://static.wikia.nocookie.net/2007scape/images/d/d8/Clan_Chat.png/revision/latest?cb=20130317123225">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/manager.js" defer></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="clan-logo">
+            <img src="images/bgimg1.png" alt="Big Goblins Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active"><img src="images/Estate_Agent_icon.png" alt="Home" class="nav-icon"> Home</a></li>
+            <li><a href="#announcements"><img src="images/Announcement_icon.png" alt="Announcements" class="nav-icon"> Announcements</a></li>
+            <li><a href="#events"><img src="images/Holiday_event_icon.png" alt="Events" class="nav-icon"> Events</a></li>
+            <li><a href="#members"><img src="images/Member_icon.png" alt="Members" class="nav-icon"> Members</a></li>
+            <li><a href="#rules"><img src="images/Danger_Tutor_icon.png" alt="Rules" class="nav-icon"> Rules</a></li>
+            <li><a href="#guides"><img src="images/Lumbridge_Guide_icon.png" alt="Guides" class="nav-icon"> Guides</a></li>
+            <li><a href="#wom"><img src="images/Junk_checker_icon.png" alt="W.O.M" class="nav-icon"> W.O.M</a></li>
+            <li><a href="#hiscores"><img src="images/Map_icon_-_Trophy.png" alt="Hiscores" class="nav-icon"> Hiscores</a></li>
+            <li><a href="#discord"><img src="images/Quest_start_icon.png" alt="Discord" class="nav-icon"> Discord</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="top-right-controls">
+            <div class="account-portal">
+                <img src="images/Makeover_Mage_icon.png" alt="Account" class="portal-icon" title="Account Login/Register">
+            </div>
+            <div class="manager-portal">
+                <img src="images/House_portal_icon.png" alt="Manager Portal" class="portal-icon" title="Manager Portal" onclick="openManagerPortal()">
+            </div>
+        </div>
+        <section id="home" class="section active-section">
+            <div class="home-content">
+                <div class="banner-container">
+                    <img src="images/banner.png" alt="Big Goblins Banner" class="clan-banner">
+                </div>
+                
+                <div class="welcome-section">
+                    <h2>Welcome to Big Goblins</h2>
+                    <p class="tagline">A Community-Driven OSRS Clan Where Everyone Belongs</p>
+                    
+                    <div class="clan-description">
+                        <p>Founded in 2021, Big Goblins has grown into one of OSRS's most welcoming and active communities. Whether you're a seasoned veteran or just starting your journey in Gielinor, our doors are always open.</p>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <img src="images/Clan_icon_-_Helper.png" alt="Community" class="feature-icon">
+                                <h3>Thriving Community</h3>
+                                <p>Join over 200 active members who share your passion for OSRS. From casual conversations to epic boss hunts, there's always something happening in our clan.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <img src="https://oldschool.runescape.wiki/images/Dragon_scimitar.png" alt="PVM" class="feature-icon">
+                                <h3>PVM & Bossing</h3>
+                                <p>Looking to learn Raids? Want to master Vorkath? Our experienced PVMers are here to help you conquer any boss. Regular teaching events and group bossing make the grind more enjoyable.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <img src="images/Skills_icon.png" alt="Skilling" class="feature-icon">
+                                <h3>Skilling Together</h3>
+                                <p>Turn those repetitive skilling grinds into social events. Join our group skilling sessions, compete in skilling competitions, or just chat while you level up.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <img src="images/Holiday_event_icon.png" alt="Events" class="feature-icon">
+                                <h3>Regular Events</h3>
+                                <p>From PVM masses to skilling competitions, drop parties to treasure hunts - there's always an exciting event around the corner.</p>
+                            </div>
+                        </div>
+
+                        <div class="join-section">
+                            <h3>Why Choose Big Goblins?</h3>
+                            <ul class="benefits-list">
+                                <li>✦ No requirements to join - everyone is welcome</li>
+                                <li>✦ Active Discord community with dedicated channels for all activities</li>
+                                <li>✦ Experienced members willing to teach and help newcomers</li>
+                                <li>✦ Weekly events and competitions with OSRS GP prizes</li>
+                                <li>✦ Friendly, drama-free environment focused on having fun</li>
+                                <li>✦ Group PVM activities with experienced raiders and bossers</li>
+                            </ul>
+                        </div>
+
+                        <div class="testimonial-section">
+                            <h3>From Our Members</h3>
+                            <div class="testimonials">
+                                <blockquote class="member-quote">
+                                    <div class="quote-header">
+                                        "Even with my limited playtime, Big Goblins makes every moment count. The community here turns even the shortest gaming sessions into memorable experiences."
+                                        <div class="quote-signature">
+                                            <img src="images/Clan_icon_-_Death.png" alt="Zezima Rank" class="rank-icon">
+                                            <em class="member-name">Zezima</em>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                                <blockquote class="member-quote">
+                                    <div class="quote-header">
+                                        "Best clan I've been in. The community is always helpful and there's no elitism - just people enjoying the game together. I recently maxed and don't think I could have done it without the clan."
+                                        <div class="quote-signature">
+                                            <img src="images/Max_cape_icon.png" alt="King Rank" class="rank-icon">
+                                            <em class="member-name">King 777</em>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="cta-section">
+                            <h3>Ready to Join?</h3>
+                            <p>Join our Discord server or find us in-game in the clan chat "Big Goblins". Whether you're looking to boss, skill, or just find a place to call home, we've got room for you!</p>
+                            <div class="cta-buttons">
+                                <a href="#discord" class="cta-button primary">Join Our Discord</a>
+                                <button class="cta-button secondary" onclick="copyToClipboard('Big Goblins')">Copy Clan Name</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="announcements" class="section">
+            <div class="construction-container">
+                <div class="construction-image"></div>
+                <div class="construction-message">
+                    <h3>Under Construction</h3>
+                    <p>Please come back later, this page is currently under construction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section">
+            <div class="construction-container">
+                <div class="construction-image"></div>
+                <div class="construction-message">
+                    <h3>Under Construction</h3>
+                    <p>Please come back later, this page is currently under construction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="section">
+            <div class="members-container">
+                <div class="members-header">
+                    <h2>Clan Members</h2>
+                    <div class="members-stats">
+                        <div class="stat-box">
+                            <span class="stat-label">Total Members</span>
+                            <span class="stat-value" id="totalMembers">Loading...</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Online Now</span>
+                            <span class="stat-value" id="onlineMembers">Loading...</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Average Combat</span>
+                            <span class="stat-value" id="avgCombat">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="members-controls">
+                    <div class="search-box">
+                        <input type="text" id="memberSearch" placeholder="Search members...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <div class="rank-filters">
+                        <button class="rank-filter active" data-rank="all">All</button>
+                        <button class="rank-filter" data-rank="owner">Owner</button>
+                        <button class="rank-filter" data-rank="admin">Admin</button>
+                        <button class="rank-filter" data-rank="moderator">Moderator</button>
+                        <button class="rank-filter" data-rank="member">Member</button>
+                    </div>
+                </div>
+                
+                <div class="members-grid" id="membersList">
+                    <!-- Members will be loaded here dynamically -->
+                </div>
+                
+                <div class="pagination">
+                    <button id="prevPage" class="page-button">Previous</button>
+                    <span id="pageInfo">Page 1 of 1</span>
+                    <button id="nextPage" class="page-button">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="rules" class="section">
+            <div class="rules-container">
+                <h2 class="rules-title">Big Goblin's Rules – Clan Rules</h2>
+                
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_General.png" alt="Respect" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>Respect the Goblin Code</h3>
+                        <p>Treat fellow clan members with respect. Trash talk is fine, but keep it friendly—no excessive toxicity, racism, or harassment. We're here to game, not babysit drama.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Danger_Tutor_icon.png" alt="No Scamming" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>No Scamming or Begging</h3>
+                        <p>Don't scam clan members or randoms—it makes us all look bad. If you're broke, go kill some goblins or do some skilling.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Lumbridge_Guide_icon.png" alt="Help Others" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>Help Your Goblin Bros</h3>
+                        <p>If a clanmate needs help with a boss, a quest, or just some advice, lend a hand if you can. We grow stronger together.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Member_icon.png" alt="No Leeching" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>No Leeching in Clan Events</h3>
+                        <p>If we're doing a raid, a mass, or a PK trip, pull your weight. Don't sit there like a goblin in Lumbridge waiting for scraps.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_Crusader.png" alt="PKing Rules" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>PKing is Allowed, But No Backstabbing</h3>
+                        <p>We support PKing, but don't skull-trick or betray clan members. If you set up a fight with another clanmate, make sure both parties agree beforehand.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_Hellcat.png" alt="Loot Rules" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>Loot Splitting & Item Lending</h3>
+                        <p>Loot splits and item lending are at player discretion—the clan is NOT responsible for stolen items or someone backing out of a split. If you scam a clanmate, you will be reported to RuneWatch and anywhere else that flags scammers. If proof is provided, you will be removed from the clan. Play fair, or get blacklisted.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_Raider.png" alt="No Cheating" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>No Botting, RWT, or Exploits</h3>
+                        <p>Don't bring Jagex's hammer down on the clan. Play fair, or at least be smart about it.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_Elite.png" alt="Chat Rules" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>Keep the Chat Goblin-Friendly</h3>
+                        <p>We allow dark humor and jokes, but don't cross into excessive hate speech or constant toxicity. Know where the line is.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_Owner.png" alt="Leadership" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>Clan Leadership Has Final Say</h3>
+                        <p>If a leader or ranked member makes a call, respect it. If you have issues, bring them up properly, not in the middle of a clan event.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Holiday_event_icon.png" alt="Have Fun" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>Most Importantly – Have Fun</h3>
+                        <p>We're here to have a good time, slay bosses, make GP, and dominate the game. If you ain't enjoying yourself, you're doing it wrong.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <img src="images/Clan_icon_-_Hellcat.png" alt="No Explicit Content" class="rule-icon">
+                    <div class="rule-content">
+                        <h3>No Explicit Content</h3>
+                        <p>Keep all shared content and images appropriate. No explicit, NSFW, or inappropriate content in any clan channels or communications. This includes profile pictures, shared media, and chat content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guides" class="section">
+            <div class="guides-container">
+                <h2>Clan Guides</h2>
+                <div class="guides-grid">
+                    <div class="guide-category">
+                        <h3>PvM Guides</h3>
+                        <div class="guide-list">
+                            <div class="guide-item">
+                                <img src="https://oldschool.runescape.wiki/images/Tumeken%27s_shadow.png" alt="TOA Guide" class="guide-icon">
+                                <div class="guide-content">
+                                    <h4>Tombs of Amascut (TOA)</h4>
+                                    <p>Complete guide to completing TOA raids from entry mode to expert mode.</p>
+                                    <div class="guide-requirements">
+                                        <span class="req-item">Beneath Cursed Sands</span>
+                                        <span class="req-item">Base 80 Combat</span>
+                                        <span class="req-item">Decent Gear</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-item">
+                                <img src="https://oldschool.runescape.wiki/images/Sanguinesti_staff.png" alt="TOB Guide" class="guide-icon">
+                                <div class="guide-content">
+                                    <h4>Theatre of Blood (TOB)</h4>
+                                    <p>Comprehensive guide to all TOB rooms and mechanics for learners.</p>
+                                    <div class="guide-requirements">
+                                        <span class="req-item">A Night at the Theatre</span>
+                                        <span class="req-item">Base 90 Combat</span>
+                                        <span class="req-item">Elite Void</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-category">
+                        <h3>Skilling Guides</h3>
+                        <div class="guide-list">
+                            <div class="guide-item">
+                                <img src="https://oldschool.runescape.wiki/images/Runecraft_icon.png" alt="Skilling Guide" class="guide-icon">
+                                <div class="guide-content">
+                                    <h4>Blood Runes 77-99</h4>
+                                    <p>AFK Runecrafting method making 500k+ GP/hr while gaining decent XP.</p>
+                                    <div class="guide-requirements">
+                                        <span class="req-item">77 Runecrafting</span>
+                                        <span class="req-item">Kourend Favor</span>
+                                        <span class="req-item">73 Agility</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-item">
+                                <img src="https://oldschool.runescape.wiki/images/Farming_icon.png" alt="Skilling Guide" class="guide-icon">
+                                <div class="guide-content">
+                                    <h4>Herb Run Guide</h4>
+                                    <p>Efficient herb runs making 1M+ GP/hr with minimal time investment.</p>
+                                    <div class="guide-requirements">
+                                        <span class="req-item">32+ Farming</span>
+                                        <span class="req-item">Magic Secateurs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-category">
+                        <h3>Money Making Guides</h3>
+                        <div class="guide-list">
+                            <div class="guide-item">
+                                <img src="https://oldschool.runescape.wiki/images/Revenant_icon.png" alt="Money Making Guide" class="guide-icon">
+                                <div class="guide-content">
+                                    <h4>Revenant Cave Guide</h4>
+                                    <p>Safe and efficient method for 2M+ GP/hr at Revenants.</p>
+                                    <div class="guide-requirements">
+                                        <span class="req-item">75+ Ranged</span>
+                                        <span class="req-item">43+ Prayer</span>
+                                        <span class="req-item">Craws Bow (Optional)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-item">
+                                <img src="https://oldschool.runescape.wiki/images/Adamant_dragon.png" alt="Money Making Guide" class="guide-icon">
+                                <div class="guide-content">
+                                    <h4>Adamant Dragons</h4>
+                                    <p>Consistent 1M+ GP/hr with low requirements and minimal risk.</p>
+                                    <div class="guide-requirements">
+                                        <span class="req-item">Dragon Slayer II</span>
+                                        <span class="req-item">70+ Combat Stats</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wom" class="section">
+            <div class="construction-container">
+                <div class="construction-image"></div>
+                <div class="construction-message">
+                    <h3>Under Construction</h3>
+                    <p>Please come back later, this page is currently under construction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hiscores" class="section">
+            <div class="construction-container">
+                <div class="construction-image"></div>
+                <div class="construction-message">
+                    <h3>Under Construction</h3>
+                    <p>Please come back later, this page is currently under construction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="discord" class="section">
+            <div class="discord-container">
+                <div class="discord-header">
+                    <h2>Join Our Community</h2>
+                    <p class="discord-tagline">Connect with fellow goblins, coordinate events, and stay updated!</p>
+                </div>
+                <div class="discord-info">
+                    <div class="discord-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Online Members</h3>
+                            <p id="online-count">Loading...</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-signal"></i>
+                            </div>
+                            <h3>Server Status</h3>
+                            <p id="server-status">Loading...</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <h3>Active Channels</h3>
+                            <p>15+ Channels</p>
+                        </div>
+                    </div>
+                    <div class="discord-features">
+                        <div class="feature-card">
+                            <img src="images/Quest_start_icon.png" alt="Events">
+                            <h4>Event Planning</h4>
+                            <p>Coordinate PvM trips, skilling events, and more</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="images/Member_icon.png" alt="Community">
+                            <h4>Active Community</h4>
+                            <p>Chat with fellow clan members 24/7</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord Bot">
+                            <h4>Custom Bot</h4>
+                            <p>Track achievements and clan progress</p>
+                        </div>
+                    </div>
+                    <div class="discord-join">
+                        <a href="#" id="invite-link" class="discord-button">
+                            <i class="fab fa-discord"></i> Join Server
+                        </a>
+                    </div>
+                </div>
+                <div class="discord-widget">
+                    <iframe 
+                        src="https://discordapp.com/widget?id=1147651801869455441&theme=dark" 
+                        width="100%"
+                        height="500" 
+                        allowtransparency="true" 
+                        frameborder="0" 
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="manager" class="section">
+            <div class="manager-container">
+                <h2>Clan Manager</h2>
+                <div class="manager-grid">
+                    <div class="manager-card" onclick="showEventManager()">
+                        <img src="images/Holiday_event_icon.png" alt="Events">
+                        <h3>Event Manager</h3>
+                    </div>
+                    <div class="manager-card" onclick="showAnnouncementManager()">
+                        <img src="images/Quest_start_icon.png" alt="Announcements">
+                        <h3>Announcement Manager</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="account" class="section">
+            <div class="account-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="register">Register</button>
+                </div>
+                <div class="auth-content" id="loginForm">
+                    <h2>Login</h2>
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <button type="submit" class="submit-button">Login</button>
+                    </form>
+                </div>
+                <div class="auth-content hidden" id="registerForm">
+                    <h2>Register</h2>
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <button type="submit" class="submit-button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section credits">
+                    <h4>Credits & Acknowledgments</h4>
+                    <p>Images and content from <a href="https://oldschool.runescape.com/" target="_blank">Old School RuneScape</a> © 2013-2023 Jagex Ltd.</p>
+                    <p>Item and skill icons provided by <a href="https://oldschool.runescape.wiki/" target="_blank">OSRS Wiki</a></p>
+                    <p>Stats tracking powered by <a href="https://wiseoldman.net/" target="_blank">Wise Old Man</a></p>
+                </div>
+                
+                <div class="footer-section creator">
+                    <h4>Created By</h4>
+                    <p>Website designed and developed by c1e</p>
+                    <a href="https://discord.com/users/1013615623571517461" target="_blank" class="contact-button">
+                        <i class="fab fa-discord"></i> Contact Developer
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This is a fan-made website and is not affiliated with Jagex Ltd.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Add this before closing body tag
+        async function fetchDiscordData() {
+            try {
+                const response = await fetch('https://discordapp.com/api/guilds/1147651801869455441/widget.json');
+                const data = await response.json();
+                
+                // Update online count
+                document.getElementById('online-count').textContent = data.presence_count + ' Members';
+                
+                // Update server status
+                document.getElementById('server-status').textContent = data.presence_count > 0 ? 'Online' : 'Offline';
+                
+                // Update invite link
+                if (data.instant_invite) {
+                    document.getElementById('invite-link').href = data.instant_invite;
+                }
+            } catch (error) {
+                console.error('Error fetching Discord data:', error);
+            }
+        }
+
+        // Fetch Discord data when page loads
+        fetchDiscordData();
+        
+        // Update Discord data every 5 minutes
+        setInterval(fetchDiscordData, 300000);
+    </script>
+</body>
+</html> 
